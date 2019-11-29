@@ -40,7 +40,12 @@ class UBBTree {
             loop(current);
         }
     }
-    eliminar()
+    remove = (nodo) => {
+        nodo.root = null
+        nodo.left = null
+        nodo.right = null
+    }
+
     preOrder(tree = this.root){//N,L,R.    // 1,5,10
         console.log(tree);
             if(tree.left != null)
@@ -85,5 +90,5 @@ class UBBTree {
 
 const tree = new UBBTree();
 
-tree.insertar(1);
+tree.insertar(12);
 console.log(tree.root)
