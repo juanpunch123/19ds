@@ -55,10 +55,36 @@ class Graph {
             } return true;
         }else return false;
     }
+
+    isDigraph(){
+        let isD=true
+        for(var i=0;i<this.matrix.length; i++){
+            for(var b=0;b<this.matrix[i].nodos.length;b++){
+                each(this.matrix,this.matrix[i].nodos[b],this.matrix[i].d)
+            }
+        }
+        function each(graph,data,value){
+            for(var c=0;c<graph.length;c++){
+                if(data==graph[c].d){
+
+                    for(var de=0;de<graph[c].nodos.length;de++){
+
+                        if(graph[c].nodos[de]==value){
+                            isD=false
+                            
+                        }
+
+                    }
+                }
+            }
+            return
+        }
+        return isD
+    }
 }
 
 
-//testeanding
+//test
 
 let nodo0 = new node("nodo0");
 let nodo1 = new node("nodo1");
@@ -66,16 +92,17 @@ let nodo2 = new node("nodo2");
 //let nodo3 = new node("nodo3");
 //let nodo4 = new node("nodo4");
 //let nodo5 = new node("nodo5");
-let grafito = new Graph(nodo0);
-grafito.addVertex(nodo1);
-grafito.addVertex(nodo2);
-//grafito.addVertex(nodo3);
-//grafito.addVertex(nodo4);
-//grafito.addVertex(nodo5);
-grafito.addEdge(0,1);
-grafito.addEdge(0,2);
-grafito.addEdge(1,2);
-//grafito.addEdge(2,4);
-//grafito.addEdge(0,5);
-//grafito.addEdge(4,3);
-grafito.printGraph();
+let graph = new Graph(nodo0);
+graph.addVertex(nodo1);
+graph.addVertex(nodo2);
+//graph.addVertex(nodo3);
+//graph.addVertex(nodo4);
+//graph.addVertex(nodo5);
+graph.addEdge(0,1);
+graph.addEdge(0,2);
+graph.addEdge(1,2);
+//graph.addEdge(2,4);
+//graph.addEdge(0,5);
+//graph.addEdge(4,3);
+graph.printGraph();
+graph.isDigraph();
