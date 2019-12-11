@@ -112,4 +112,4 @@ m.initIdentidad();
 console.log(m.isIdentidad());
 m1 = new Matrix(3, 4);
 m1.initIdentidad();
-m1.isIdentidad();
+console.log(m1.isIdentidad());
