@@ -107,4 +107,7 @@ class Matrix{
     }
 }
 
-
+m = new Matrix(4, 4);
+m.initIdentidad();
+m1 = new Matrix(3, 4);
+m.initIdentidad();
