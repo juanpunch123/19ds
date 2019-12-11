@@ -17,6 +17,18 @@ class Matrix{
             }
         }
     }
+    initIdentidad(x){
+        if(this.isSquare(x)){
+
+            for(var a=0;a<this.r;a++){
+                for(var b=0;b<this.c;b++){
+                    if(a==b) this.m[a][b] = 1;
+                }
+            }
+        } else{
+            console.error("No se puede inizializar como Identidad una matríz que no es cuadrada");
+        }
+    }
     getRow(r){
         r=-1
         this.row=new Array(this.r-1)
@@ -94,3 +106,5 @@ class Matrix{
         this.m[a][b]=c
     }
 }
+
+
