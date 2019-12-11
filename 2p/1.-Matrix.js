@@ -109,5 +109,7 @@ class Matrix{
 
 m = new Matrix(4, 4);
 m.initIdentidad();
+console.log(m);
 m1 = new Matrix(3, 4);
-m.initIdentidad();
+m1.initIdentidad();
+console.log(m1);
