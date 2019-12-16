@@ -1,0 +1,30 @@
+a={data: 'a'};
+b={data: 'b'};
+c={data: 'c'};
+d={data: 'd'};
+e0={data: 'e0'};
+e1={data: 'e1'};
+e2={data: 'e2'};
+e3={data: 'e3'};
+e4={data: 'e4'};
+e5={data: 'e5'};
+e6={data: 'e6'};
+
+a.l=[];
+b.l=[];
+c.l=[];
+d.l=[];
+
+a.l.push(e0);
+a.l.push(e1);
+a.l.push(e2);
+b.l.push(e1);
+b.l.push(e4);
+b.l.push(e5);
+b.l.push(e6);
+c.l.push(e2);
+c.l.push(e3);
+c.l.push(e4);
+d.l.push(e3);
+d.l.push(e5);
+d.l.push(e6);
